@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar style="--background: linear-gradient(to right, #3235f5, #6a5af9);">
+    <ion-title style="--color: white;">Data Pinjaman</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-grid>
+    <ion-row *ngFor="let pinjam of pinjams">
+      <ion-col size="12" size-md="6">
+        <ion-card class="custom-card" 
+          [style.border-left]="'5px solid ' + (pinjam.jumlah > 1000000 ? 'green' : 'red')">
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-icon name="cash-outline" style="margin-right: 8px;"></ion-icon> 
+              Jumlah: Rp.{{pinjam.jumlah}}
+            </ion-card-subtitle>
+            <ion-card-title>{{pinjam.nama}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p><ion-icon name="call-outline"></ion-icon> <strong>No.Hp:</strong> {{pinjam.nohp}}</p>
+            <p><ion-icon name="mail-outline"></ion-icon> <strong>Email:</strong> {{pinjam.email}}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

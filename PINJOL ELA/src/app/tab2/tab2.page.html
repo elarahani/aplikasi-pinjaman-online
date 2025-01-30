@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar style="--background: linear-gradient(to right, #3235f5, #6a5af9);">
+    <ion-title style="--color: white;">Daftar Pinjaman Online</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding dark-bg">
+  <ion-card class="welcome-card custom-card">
+    <ion-card-header>
+      <ion-card-title color="primary" class="card-title">Daftar Pinjaman</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Silakan isikan form di bawah untuk registrasi pinjaman Anda.</p>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">Nama Lengkap</ion-label>
+          <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="card-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">NIK</ion-label>
+          <ion-input type="text" [(ngModel)]="nik"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">Nomor HP/WA</ion-label>
+          <ion-input type="text" [(ngModel)]="nohp"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="calendar-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">Usia</ion-label>
+          <ion-input type="number" [(ngModel)]="usia"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="cash-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">Pinjaman Anda</ion-label>
+          <ion-select [(ngModel)]="jumlah" class="popover-content" placeholder="Pilih pinjaman Anda">
+            <ion-select-option value="500.000">Rp.500.000</ion-select-option>
+            <ion-select-option value="1.000.000">Rp.1.000.000</ion-select-option>
+            <ion-select-option value="2.000.000">Rp.2.000.000</ion-select-option>
+            <ion-select-option value="3.000.000">Rp.3.000.000</ion-select-option>
+            <ion-select-option value="10.000.000">Rp.10.000.000</ion-select-option>
+            <ion-select-option value="20.000.000">Rp.20.000.000</ion-select-option>
+            <ion-select-option value="30.000.000">Rp.30.000.000</ion-select-option>
+            <ion-select-option value="40.000.000">Rp.40.000.000</ion-select-option>
+            <ion-select-option value="50.000.000">Rp.50.000.000</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <div class="ion-padding">
+        <ion-button expand="block" color="primary" size="large" (click)="addRegister()">
+          <ion-icon name="trending-up-outline" slot="start"></ion-icon>
+          Daftar
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

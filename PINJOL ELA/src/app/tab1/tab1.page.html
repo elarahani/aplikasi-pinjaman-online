@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="--background: linear-gradient(to right, #3235f5, #6a5af9);">
+    <ion-title style="--color: white;">Halaman Utama</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Bagian Hero -->
+  <div class="hero-section" style="text-align: center; padding: 20px;">
+    <ion-text>
+      <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">
+        Solusi Keuangan Anda
+      </h2>
+      <p style="color: #ffffff; font-size: 1rem; margin: 0 20px;">
+        Pinjaman mudah, cepat, dan terpercaya. Dapatkan dana Anda sekarang juga!
+      </p>
+    </ion-text>
+  </div>
+
+  <!-- Tombol CTA -->
+  <div class="cta-section" style="display: flex; justify-content: center; margin-top: 20px;">
+    <ion-button 
+      expand="block" 
+      color="warning" 
+      routerLink="/tabs/tab2" 
+      style="--border-radius: 20px; font-size: 1.2rem; padding: 15px 25px; width: 80%; max-width: 300px;">
+      <ion-icon name="cash-outline" slot="start"></ion-icon>
+      Dapatkan Dana Sekarang!!!
+    </ion-button>
+  </div>
+
+  <!-- Tambahan Info -->
+<div class="info-section" style="margin: 30px 20px; text-align: center;">
+  <ion-card style="--background: #ffffff; --border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <ion-card-header>
+      <ion-card-title style="font-size: 1.4rem; color: #3235f5; text-align: center; font-weight: bold;">
+        Kenapa Memilih Kami?
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="display: flex; flex-direction: column; gap: 20px; padding: 20px;">
+      <!-- Item 1 -->
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <ion-icon name="rocket-outline" style="font-size: 2rem; color: #32cd32;"></ion-icon>
+        <div style="text-align: left;">
+          <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #3235f5;">Proses Cepat</p>
+          <p style="margin: 0; font-size: 0.9rem; color: #6a5af9;">Pengajuan Anda akan segera diproses tanpa ribet.</p>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <ion-icon name="shield-checkmark-outline" style="font-size: 2rem; color: #32cd32;"></ion-icon>
+        <div style="text-align: left;">
+          <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #3235f5;">Aman dan Terpercaya</p>
+          <p style="margin: 0; font-size: 0.9rem; color: #6a5af9;">Data Anda dijamin aman dengan sistem kami.</p>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <ion-icon name="cash-outline" style="font-size: 2rem; color: #32cd32;"></ion-icon>
+        <div style="text-align: left;">
+          <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #3235f5;">Bunga Rendah</p>
+          <p style="margin: 0; font-size: 0.9rem; color: #6a5af9;">Nikmati bunga rendah yang bersahabat.</p>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>

@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar style="--background: linear-gradient(to right, #3235f5, #6a5af9);">
+    <ion-title style="--color: white;">Tentang Aplikasi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title  size="large">Tentang Aplikasi</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Banner Section -->
+  <ion-card class="about-banner">
+    <img src="assets/img/banner-about.jpg" alt="Tentang Kami" />
+    <ion-card-header>
+      <ion-card-title style="text-align: center;">Selamat Datang di Aplikasi Pinjaman Terpercaya</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- Section 1: Tentang Kami -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tentang Kami</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        <strong>[Nama Aplikasi Anda]</strong> adalah platform pinjaman online terpercaya yang dirancang untuk memberikan solusi keuangan cepat, mudah, dan aman bagi semua pengguna. Kami berkomitmen untuk membantu Anda mewujudkan kebutuhan finansial tanpa proses yang rumit.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Section 2: Keunggulan -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Mengapa Memilih Kami?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+          <ion-label><strong>Cepat dan Mudah:</strong> Proses pengajuan hanya dalam beberapa langkah sederhana.</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="shield-checkmark-outline" slot="start" color="success"></ion-icon>
+          <ion-label><strong>Aman dan Terpercaya:</strong> Data pribadi Anda dilindungi dengan standar keamanan tinggi.</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="pricetag-outline" slot="start" color="success"></ion-icon>
+          <ion-label><strong>Bunga Kompetitif:</strong> Nikmati suku bunga yang adil dan jelas.</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="options-outline" slot="start" color="success"></ion-icon>
+          <ion-label><strong>Fleksibel:</strong> Pilihan tenor dan jumlah pinjaman sesuai kebutuhan.</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Section 3: Kontak -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Hubungi Kami</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Jika Anda memiliki pertanyaan atau membutuhkan bantuan, hubungi kami:
+      </p>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
+          <ion-label>Email: <strong>aplikasipinjo&#64;email.com</strong></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call-outline" slot="start" color="primary"></ion-icon>
+          <ion-label>Telepon: <strong>0800-123-4567</strong></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="time-outline" slot="start" color="primary"></ion-icon>
+          <ion-label>Jam Operasional: <strong>Senin - Jumat, 09.00 - 17.00 WIB</strong></ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,35 @@
+.bg-content {
+    background-color: #ffffff; /* Putih untuk konten */
+  }
+  
+  .custom-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  ion-item {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Warna abu-abu terang untuk input */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-button {
+    border-radius: 10px;
+  }
+  
+  ion-toolbar {
+    --background: #3235f5; /* Warna biru seperti halaman "Data Pinjaman" */
+  }
+  
+  .center-content p {
+    margin-bottom: 1rem; /* Jarak antara teks dan tombol */
+    font-size: 16px; /* Ukuran font teks */
+    color: #ffffff; /* Warna teks opsional */
+  }

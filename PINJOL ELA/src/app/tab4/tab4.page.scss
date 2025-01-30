@@ -1,0 +1,84 @@
+.custom-card {
+    --background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+  
+  .custom-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3235f5;
+  }
+  
+  .custom-subtitle {
+    font-size: 0.9em;
+    color: #6c757d;
+  }
+  
+  ion-content {
+    --background: #ffffff;
+  }
+  
+  ion-toolbar {
+    --background: #3235f5;
+    color: white;
+  }
+  
+  p {
+    margin: 0;
+    padding: 4px 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .custom-card {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  ion-card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-card {
+    padding: 16px; /* Memberikan ruang antara border dan konten */
+    border-radius: 8px; /* Membuat sudut kartu lebih halus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+  }
+  
+  ion-card-header {
+    margin-bottom: 8px; /* Memberikan jarak antara header dan konten */
+  }
+  
+  ion-card-subtitle {
+    font-size: 0.9em; /* Ukuran teks lebih kecil */
+    color: #6c757d; /* Warna teks subtitle lebih lembut */
+  }
+  
+  ion-card-title {
+    font-size: 1.2em; /* Ukuran teks lebih besar */
+    font-weight: bold;
+    color: #000000; /* Warna teks utama */
+  }
+  
+  ion-card-content p {
+    margin: 4px 0; /* Memberikan jarak antar paragraf */
+    font-size: 0.95em; /* Ukuran teks konten */
+  }
+  
+  ion-icon {
+    margin-right: 8px; /* Memberikan ruang antara ikon dan teks */
+    color: #3235f5; /* Warna ikon */
+  }
+  
